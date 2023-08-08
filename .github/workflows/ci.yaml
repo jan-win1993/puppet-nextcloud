@@ -3,7 +3,7 @@ name: ci
 
 on:
   push:
-    branches: [main]
+    branches: [fix-github-actions]
   pull_request:
     branches: [main]
   workflow_dispatch:
