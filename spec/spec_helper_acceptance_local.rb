@@ -82,7 +82,7 @@ RSpec.configure do |c|
     puts 'Running acceptance test with custom hiera data'
 
     # Install soft dependencies.
-    LitmusHelper.instance.run_shell('puppet module install puppet/php')
+    LitmusHelper.instance.run_shell('puppet module install puppet/php --version 9.0.0')
     LitmusHelper.instance.run_shell('puppet module install puppetlabs/mysql')
 
     # Configure Hiera and add data to setup requirements.
